@@ -1,0 +1,39 @@
+@import '../../setting';
+.board-columns{
+    display: flex;
+    margin: 0 $gap $gap 0;
+    gap: 10px;
+    overflow-x:auto;
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:horizontal {
+      height: 12px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 5px solid $list-bg-color;
+    }
+    .column-drop-preview {
+      background-color: rgba(150, 150, 200, 0.1);
+      border: 1px dashed #abc;
+      margin: 5px 45px 5px 5px;
+    }
+    .add-new-column{
+      width: 250px;
+      height: 32px;
+      line-height: 32px;
+      padding: 4px 0 4px 15px;
+      cursor: pointer;
+      color: #333;
+      margin-left: $gap;
+      font-size: 15px;
+      background-color: hsla(0, 0, 100, .24);
+      border-radius: $card-border-radius;
+      transition: 0.3s;
+      
+      &:hover{
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+  }
